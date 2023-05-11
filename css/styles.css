@@ -4,12 +4,12 @@
   --accent-color: #404bbf;
   --white-color: #ffffff;
   --brand-color-light: #f4f4fd;
-  --logo-buttoms-color: #4d5ae5;
+  --logo-color: #4d5ae5;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--brand-color-dark);
+  color: var(--text-color);
 }
 
 .list {
@@ -26,7 +26,7 @@ body {
   background-color: var(--white-color);
 }
 /* LOGO  */
-.header-logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -36,11 +36,15 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--brand-color);
+  color: var(--logo-color);
+}
+
+.header-logo {
+  color: var(--brand-color-dark);
 }
 
 .logo-first-part {
-  color: var(--logo-buttoms-color);
+  color: var(--logo-color);
 }
 
 /* NAVIGATION  */
@@ -50,7 +54,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--brand-color-dark);
 }
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus {
@@ -58,7 +62,6 @@ body {
 }
 
 .contact-info .contact-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -99,7 +102,7 @@ body {
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--white-color);
-  background-color: var(--logo-buttoms-color);
+  background-color: var(--logo-color);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -143,6 +146,10 @@ body {
 .our-team {
   background-color: var(--brand-color-light);
 }
+
+.member-card {
+  background-color: var(--white-color);
+}
 .our-team .subtitle {
   text-align: center;
 }
@@ -161,18 +168,24 @@ body {
 .footer {
   background-color: var(--brand-color-dark);
 }
-.footer-logo {
-  font-family: "Raleway";
+
+.logo {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--logo-color);
+}
+
+.footer-logo {
   color: var(--brand-color-light);
 }
+
 .footer .footer-text {
   font-weight: 400;
   font-size: 16px;
@@ -194,7 +207,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--logo-buttoms-color);
+  color: var(--logo-color);
   background-color: var(--brand-color-light);
 }
 
@@ -203,4 +216,8 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+}
+
+.filter-card {
+  background-color: var(--white-color);
 }
