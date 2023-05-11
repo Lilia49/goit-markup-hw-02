@@ -62,8 +62,11 @@ body {
   color: var(--accent-color);
 }
 
-.contact-info .contact-item {
+.contact-info {
   font-style: normal;
+}
+
+.contact-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
