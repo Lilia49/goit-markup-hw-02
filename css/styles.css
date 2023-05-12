@@ -22,6 +22,19 @@ body {
   font-family: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* HEADER  */
 .header {
   background-color: var(--white-color);
@@ -168,19 +181,6 @@ body {
 /* FOOTER  */
 .footer {
   background-color: var(--brand-color-dark);
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--logo-color);
 }
 
 .footer-logo {
